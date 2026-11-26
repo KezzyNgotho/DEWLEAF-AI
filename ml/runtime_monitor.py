@@ -35,6 +35,15 @@ def _f(row, k, d=None):
     except Exception:
         return d
 
+def recommended_safe_action(faults: list[dict]) -> dict:
+    codes = {f.get("code") for f in faults}
+    crit = {f.get("code") for f in faults if f.get("severity") == "critical"}
+    if {"SAFETY_PELTIER_NO_FAN","SAFETY_FROST_GUARD","POWER_LOW_BUS","ENERGY_NIGHT_CAP"} & (codes|crit):
+        return {"action_id": 100, "name": "passive_only", "reason": "critical_safety_or_power_fault"}
+    if "SENSOR_SOIL_DIVERGENCE" in codes:
+        return {"action_id": 100, "name": "passive_only", "reason": "sensor_disagreement"}
+    return {"action_id": None, "name": "normal", "reason": "no_forced_fallback"}
+
 def check_row(row: dict, prev: dict | None = None) -> list[dict]:
     faults: list[FaultEvent] = []
     for k,(lo,hi) in RANGES.items():

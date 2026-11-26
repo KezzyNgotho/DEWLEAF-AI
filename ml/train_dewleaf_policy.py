@@ -245,12 +245,17 @@ def main() -> int:
     export_header(df, candidate_actions(df), Path(args.out), args.lambda_wh)
     export_tflite_or_tree(final_ml, final_wh, Path(args.model_out).with_suffix(".json"))
 
+    label_source = str(df["label_source"].iloc[0]) if "label_source" in df.columns and len(df) else "unknown"
+    measured = bool("measured" in label_source.lower() or "bench" in label_source.lower())
     report = {
         "n_rows": int(len(df)),
         "n_nights": int(df["night_id"].nunique()),
         "splits": splits,
         "lambda_wh": args.lambda_wh,
         "baseline_action": args.baseline_action,
+        "label_source": label_source,
+        "measured_data": measured,
+        "d0_3_claim_valid": bool(measured and np.mean([r.improvement_pct for r in results]) >= 15.0),
         "mean_improvement_pct": float(np.mean([r.improvement_pct for r in results])),
         "mean_policy_reward": float(np.mean([r.policy_reward for r in results])),
         "mean_baseline_reward": float(np.mean([r.baseline_reward for r in results])),

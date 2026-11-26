@@ -7,7 +7,7 @@ from __future__ import annotations
 import argparse, csv, json
 from pathlib import Path
 from ml.intelligence_engine import Context, decide
-from ml.runtime_monitor import check_row
+from ml.runtime_monitor import check_row, recommended_safe_action
 
 def ffloat(v, d=0.0):
     try: return float(v)
@@ -25,6 +25,7 @@ def main():
     prev=None; out=[]
     for row in r:
         faults=check_row(row, prev)
+        safe=recommended_safe_action(faults)
         hour=0
         try:
             iso=row.get('iso_time','')
@@ -36,8 +37,8 @@ def main():
             soil_a_pct=ffloat(row.get('soil_a_pct',60)), soil_b_pct=ffloat(row.get('soil_b_pct',60)),
             bus_v=ffloat(row.get('bus_v',12.4)), hour=hour, night_wh_used=ffloat(row.get('wh_total',0)),
         )
-        decision=decide(ctx)
-        out.append({'iso_time':row.get('iso_time'),'night_id':row.get('night_id'),'action_id':row.get('action_id'),'faults':faults,'decision':decision['selected'],'why':decision['why']})
+        decision=decide(ctx, faults=faults, model_source=row.get('model_source','physics_heuristic_synthetic'))
+        out.append({'iso_time':row.get('iso_time'),'night_id':row.get('night_id'),'action_id':row.get('action_id'),'faults':faults,'recommended_safe_action':safe,'decision':decision['selected'],'confidence':decision['confidence'],'safe_fallback':decision['safe_fallback'],'why':decision['why']})
         prev=row
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     Path(args.out).write_text(json.dumps({'rows':len(out),'fault_count':sum(len(x['faults']) for x in out),'events':out}, indent=2))
