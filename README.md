@@ -34,6 +34,13 @@ make build-fw  # PlatformIO ESP32-S3 build (needs platformio)
 - Electrical validation: brownout/full-load, INA219/YF-S201 calibration (±3%), Peltier/fan/frost interlocks, ADC noise, SD/RF reliability.
 - Real dew yield; current ML gains are **physics-informed synthetic/sim**.
 
+## Added Hardening
+
+- **Model registry/promotion gates**: `ml/models/registry/model_registry.json`, `ml/promote_model.py`, `docs/ops/RELEASE_OTA.md`
+- **Observability/auth/safety**: `ml/observability.py`, `software/cloud/auth.py`, `docs/ops/ALERTS.md`, `docs/safety/FMEA.md`
+- **Data flywheel/ops**: `ml/drift_report.py`, `ml/calibrate_from_bench.py`, `docs/ops/BENCH_DATA_COLLECTION_PROTOCOL.md`, `docs/ops/OPS_RUNBOOK.md`
+- **Runtime guard/scenarios**: `ml/action_guard.py`, `tests/scenarios/`, `.github/workflows/firmware-ci.yml`
+
 ## Repository Map
 
 ```text

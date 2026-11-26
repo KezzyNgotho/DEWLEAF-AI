@@ -7,6 +7,10 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from ml.intelligence_engine import Context, decide
+try:
+    from software.cloud.auth import check_auth, audit
+except Exception:
+    from auth import check_auth, audit
 
 ROOT = Path(__file__).resolve().parents[2]
 LOG_PATH = ROOT / "logs" / "cloud_telemetry.csv"
@@ -30,6 +34,9 @@ class Handler(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_POST(self):
+        if not check_auth(self.headers):
+            audit('auth_fail', {'path': self.path})
+            return self._send(401, {"error":"unauthorized"})
         path = urlparse(self.path).path
         length = int(self.headers.get("Content-Length", "0"))
         raw = self.rfile.read(length) if length else b"{}"
