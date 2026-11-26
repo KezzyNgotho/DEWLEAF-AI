@@ -1,0 +1,19 @@
+{
+  "hil_csv_sha256": "ce594dc75f2cd084a29caa0d434f7002049fd734c22875e587483cf3b23e9c57",
+  "rows": 78,
+  "fault_count": 0,
+  "first_decision": {
+    "action": "passive_only",
+    "action_id": 100,
+    "pred_ml": 0.10404999999999996,
+    "pred_wh": 0.0,
+    "reward": 0.10404999999999996
+  },
+  "last_decision": {
+    "action": "shed_dual_nuc",
+    "action_id": 310,
+    "pred_ml": 6.941279999999999,
+    "pred_wh": 0.42,
+    "reward": 4.841279999999999
+  }
+}

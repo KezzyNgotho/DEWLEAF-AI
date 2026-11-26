@@ -1,0 +1,10 @@
+{
+  "rows": 1092,
+  "nights": 14,
+  "baseline_reward_mean": 4.414134213340564,
+  "policy_reward_mean": 78.03555411251502,
+  "improvement_pct": 1667.8563977505362,
+  "actual_reward_mean": 7.904880952380953,
+  "night_improvement_pct_mean": 1826.552079883924,
+  "night_improvement_pct_median": 1896.1655943358442
+}

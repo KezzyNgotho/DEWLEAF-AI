@@ -1,0 +1,1616 @@
+{
+  "rows": 78,
+  "fault_count": 14,
+  "events": [
+    {
+      "iso_time": "2026-11-01T18:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.10404999999999996,
+        "pred_wh": 0.0,
+        "reward": 0.10404999999999996
+      },
+      "why": [
+        "delta_t=2.46C near_dp=False predawn=False passive=False",
+        "cond_potential=4.16 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.10 pred_ml=0.10 pred_wh=0.000",
+        "soil_mean=62.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T18:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.11655000000000007,
+        "pred_wh": 0.0,
+        "reward": 0.11655000000000007
+      },
+      "why": [
+        "delta_t=2.30C near_dp=False predawn=False passive=False",
+        "cond_potential=4.66 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.12 pred_ml=0.12 pred_wh=0.000",
+        "soil_mean=59.8% irrigation=micro_dose"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T18:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.10854999999999995,
+        "pred_wh": 0.0,
+        "reward": 0.10854999999999995
+      },
+      "why": [
+        "delta_t=2.40C near_dp=False predawn=False passive=False",
+        "cond_potential=4.34 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.11 pred_ml=0.11 pred_wh=0.000",
+        "soil_mean=62.2% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T18:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.11635000000000005,
+        "pred_wh": 0.0,
+        "reward": 0.11635000000000005
+      },
+      "why": [
+        "delta_t=2.30C near_dp=False predawn=False passive=False",
+        "cond_potential=4.65 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.12 pred_ml=0.12 pred_wh=0.000",
+        "soil_mean=62.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T18:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.1278,
+        "pred_wh": 0.0,
+        "reward": 0.1278
+      },
+      "why": [
+        "delta_t=2.15C near_dp=False predawn=False passive=False",
+        "cond_potential=5.11 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.13 pred_ml=0.13 pred_wh=0.000",
+        "soil_mean=60.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T18:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "RANGE_AIR_TEMP_C",
+          "severity": "critical",
+          "message": "air_temp_c out of range",
+          "response": "flag_sensor_invalid",
+          "value": 999.0
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.1129,
+        "pred_wh": 0.0,
+        "reward": 0.1129
+      },
+      "why": [
+        "delta_t=985.33C near_dp=False predawn=False passive=False",
+        "cond_potential=4.52 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.11 pred_ml=0.11 pred_wh=0.000",
+        "soil_mean=60.8% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T19:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.1192999999999999,
+        "pred_wh": 0.0,
+        "reward": 0.1192999999999999
+      },
+      "why": [
+        "delta_t=2.26C near_dp=False predawn=False passive=False",
+        "cond_potential=4.77 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.12 pred_ml=0.12 pred_wh=0.000",
+        "soil_mean=61.2% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T19:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.12219999999999998,
+        "pred_wh": 0.0,
+        "reward": 0.12219999999999998
+      },
+      "why": [
+        "delta_t=2.22C near_dp=False predawn=False passive=False",
+        "cond_potential=4.89 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.12 pred_ml=0.12 pred_wh=0.000",
+        "soil_mean=63.6% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T19:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.15350000000000003,
+        "pred_wh": 0.0,
+        "reward": 0.15350000000000003
+      },
+      "why": [
+        "delta_t=1.82C near_dp=False predawn=False passive=False",
+        "cond_potential=6.14 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.15 pred_ml=0.15 pred_wh=0.000",
+        "soil_mean=62.2% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T19:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.12930000000000005,
+        "pred_wh": 0.0,
+        "reward": 0.12930000000000005
+      },
+      "why": [
+        "delta_t=2.13C near_dp=False predawn=False passive=False",
+        "cond_potential=5.17 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.13 pred_ml=0.13 pred_wh=0.000",
+        "soil_mean=63.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T19:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.16215000000000007,
+        "pred_wh": 0.0,
+        "reward": 0.16215000000000007
+      },
+      "why": [
+        "delta_t=1.71C near_dp=False predawn=False passive=False",
+        "cond_potential=6.49 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.16 pred_ml=0.16 pred_wh=0.000",
+        "soil_mean=63.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T19:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 0.1479,
+        "pred_wh": 0.0,
+        "reward": 0.1479
+      },
+      "why": [
+        "delta_t=1.89C near_dp=False predawn=False passive=False",
+        "cond_potential=5.92 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=0.15 pred_ml=0.15 pred_wh=0.000",
+        "soil_mean=63.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T20:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.5795000000000001,
+        "pred_wh": 0.0,
+        "reward": 1.5795000000000001
+      },
+      "why": [
+        "delta_t=1.76C near_dp=False predawn=False passive=True",
+        "cond_potential=6.32 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.58 pred_ml=1.58 pred_wh=0.000",
+        "soil_mean=62.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T20:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.7540000000000007,
+        "pred_wh": 0.0,
+        "reward": 1.7540000000000007
+      },
+      "why": [
+        "delta_t=1.54C near_dp=False predawn=False passive=True",
+        "cond_potential=7.02 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.75 pred_ml=1.75 pred_wh=0.000",
+        "soil_mean=62.4% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T20:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.6730000000000007,
+        "pred_wh": 0.0,
+        "reward": 1.6730000000000007
+      },
+      "why": [
+        "delta_t=1.64C near_dp=False predawn=False passive=True",
+        "cond_potential=6.69 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.67 pred_ml=1.67 pred_wh=0.000",
+        "soil_mean=63.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T20:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.6680000000000008,
+        "pred_wh": 0.0,
+        "reward": 1.6680000000000008
+      },
+      "why": [
+        "delta_t=1.65C near_dp=False predawn=False passive=True",
+        "cond_potential=6.67 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.67 pred_ml=1.67 pred_wh=0.000",
+        "soil_mean=63.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T20:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8105000000000004,
+        "pred_wh": 0.0,
+        "reward": 1.8105000000000004
+      },
+      "why": [
+        "delta_t=1.47C near_dp=False predawn=False passive=True",
+        "cond_potential=7.24 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.81 pred_ml=1.81 pred_wh=0.000",
+        "soil_mean=62.2% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T20:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.4830000000000003,
+        "pred_wh": 0.0,
+        "reward": 1.4830000000000003
+      },
+      "why": [
+        "delta_t=1.88C near_dp=False predawn=False passive=True",
+        "cond_potential=5.93 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.48 pred_ml=1.48 pred_wh=0.000",
+        "soil_mean=62.6% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T21:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.775,
+        "pred_wh": 0.0,
+        "reward": 1.775
+      },
+      "why": [
+        "delta_t=1.51C near_dp=False predawn=False passive=True",
+        "cond_potential=7.10 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.77 pred_ml=1.77 pred_wh=0.000",
+        "soil_mean=62.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T21:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "SENSOR_SOIL_DIVERGENCE",
+          "severity": "warn",
+          "message": "soil probes diverge",
+          "response": "inspect_soil_probes",
+          "value": {
+            "a": 90.0,
+            "b": 20.0
+          }
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8630000000000002,
+        "pred_wh": 0.0,
+        "reward": 1.8630000000000002
+      },
+      "why": [
+        "delta_t=1.40C near_dp=False predawn=False passive=True",
+        "cond_potential=7.45 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.86 pred_ml=1.86 pred_wh=0.000",
+        "soil_mean=55.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T21:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "SENSOR_SOIL_DIVERGENCE",
+          "severity": "warn",
+          "message": "soil probes diverge",
+          "response": "inspect_soil_probes",
+          "value": {
+            "a": 90.0,
+            "b": 20.0
+          }
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8455000000000001,
+        "pred_wh": 0.0,
+        "reward": 1.8455000000000001
+      },
+      "why": [
+        "delta_t=1.42C near_dp=False predawn=False passive=True",
+        "cond_potential=7.38 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.85 pred_ml=1.85 pred_wh=0.000",
+        "soil_mean=55.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T21:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.7424999999999995,
+        "pred_wh": 0.0,
+        "reward": 1.7424999999999995
+      },
+      "why": [
+        "delta_t=1.55C near_dp=False predawn=False passive=True",
+        "cond_potential=6.97 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.74 pred_ml=1.74 pred_wh=0.000",
+        "soil_mean=62.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T21:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "SENSOR_SOIL_DIVERGENCE",
+          "severity": "warn",
+          "message": "soil probes diverge",
+          "response": "inspect_soil_probes",
+          "value": {
+            "a": 90.0,
+            "b": 20.0
+          }
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8315000000000003,
+        "pred_wh": 0.0,
+        "reward": 1.8315000000000003
+      },
+      "why": [
+        "delta_t=1.44C near_dp=False predawn=False passive=True",
+        "cond_potential=7.33 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.83 pred_ml=1.83 pred_wh=0.000",
+        "soil_mean=55.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T21:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "SENSOR_SOIL_DIVERGENCE",
+          "severity": "warn",
+          "message": "soil probes diverge",
+          "response": "inspect_soil_probes",
+          "value": {
+            "a": 90.0,
+            "b": 20.0
+          }
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.75,
+        "pred_wh": 0.0,
+        "reward": 1.75
+      },
+      "why": [
+        "delta_t=1.54C near_dp=False predawn=False passive=True",
+        "cond_potential=7.00 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.75 pred_ml=1.75 pred_wh=0.000",
+        "soil_mean=55.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T22:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1374999999999993,
+        "pred_wh": 0.0,
+        "reward": 2.1374999999999993
+      },
+      "why": [
+        "delta_t=1.06C near_dp=False predawn=False passive=True",
+        "cond_potential=8.55 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.14 pred_ml=2.14 pred_wh=0.000",
+        "soil_mean=61.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T22:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.7650000000000003,
+        "pred_wh": 0.0,
+        "reward": 1.7650000000000003
+      },
+      "why": [
+        "delta_t=1.52C near_dp=False predawn=False passive=True",
+        "cond_potential=7.06 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.77 pred_ml=1.77 pred_wh=0.000",
+        "soil_mean=60.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T22:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1685,
+        "pred_wh": 0.0,
+        "reward": 2.1685
+      },
+      "why": [
+        "delta_t=1.02C near_dp=False predawn=False passive=True",
+        "cond_potential=8.67 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.17 pred_ml=2.17 pred_wh=0.000",
+        "soil_mean=63.4% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T22:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8445000000000003,
+        "pred_wh": 0.0,
+        "reward": 1.8445000000000003
+      },
+      "why": [
+        "delta_t=1.42C near_dp=False predawn=False passive=True",
+        "cond_potential=7.38 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.84 pred_ml=1.84 pred_wh=0.000",
+        "soil_mean=60.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T22:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.072,
+        "pred_wh": 0.0,
+        "reward": 2.072
+      },
+      "why": [
+        "delta_t=1.14C near_dp=False predawn=False passive=True",
+        "cond_potential=8.29 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.07 pred_ml=2.07 pred_wh=0.000",
+        "soil_mean=62.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T22:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1975,
+        "pred_wh": 0.0,
+        "reward": 2.1975
+      },
+      "why": [
+        "delta_t=0.98C near_dp=False predawn=False passive=True",
+        "cond_potential=8.79 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.20 pred_ml=2.20 pred_wh=0.000",
+        "soil_mean=62.2% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T23:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.0455,
+        "pred_wh": 0.0,
+        "reward": 2.0455
+      },
+      "why": [
+        "delta_t=1.17C near_dp=False predawn=False passive=True",
+        "cond_potential=8.18 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.05 pred_ml=2.05 pred_wh=0.000",
+        "soil_mean=60.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T23:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.053,
+        "pred_wh": 0.0,
+        "reward": 2.053
+      },
+      "why": [
+        "delta_t=1.16C near_dp=False predawn=False passive=True",
+        "cond_potential=8.21 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.05 pred_ml=2.05 pred_wh=0.000",
+        "soil_mean=62.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T23:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.2080000000000006,
+        "pred_wh": 0.0,
+        "reward": 2.2080000000000006
+      },
+      "why": [
+        "delta_t=0.97C near_dp=False predawn=False passive=True",
+        "cond_potential=8.83 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.21 pred_ml=2.21 pred_wh=0.000",
+        "soil_mean=62.6% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T23:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "POWER_LOW_BUS",
+          "severity": "warn",
+          "message": "bus voltage low",
+          "response": "disable_high_load_actuators",
+          "value": 10.5
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1105,
+        "pred_wh": 0.0,
+        "reward": 2.1105
+      },
+      "why": [
+        "delta_t=1.09C near_dp=False predawn=False passive=True",
+        "cond_potential=8.44 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.11 pred_ml=2.11 pred_wh=0.000",
+        "soil_mean=63.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T23:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "RANGE_RH_PCT",
+          "severity": "critical",
+          "message": "rh_pct out of range",
+          "response": "flag_sensor_invalid",
+          "value": 150.0
+        },
+        {
+          "code": "PHYSICS_RH_INVALID",
+          "severity": "critical",
+          "message": "RH invalid",
+          "response": "flag_sensor_invalid",
+          "value": 150.0
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 3.75,
+        "pred_wh": 0.0,
+        "reward": 3.75
+      },
+      "why": [
+        "delta_t=1.05C near_dp=False predawn=False passive=True",
+        "cond_potential=15.00 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=3.75 pred_ml=3.75 pred_wh=0.000",
+        "soil_mean=62.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-01T23:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.053,
+        "pred_wh": 0.0,
+        "reward": 2.053
+      },
+      "why": [
+        "delta_t=1.16C near_dp=False predawn=False passive=True",
+        "cond_potential=8.21 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.05 pred_ml=2.05 pred_wh=0.000",
+        "soil_mean=62.8% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T00:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8925000000000005,
+        "pred_wh": 0.0,
+        "reward": 1.8925000000000005
+      },
+      "why": [
+        "delta_t=1.36C near_dp=False predawn=False passive=True",
+        "cond_potential=7.57 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.89 pred_ml=1.89 pred_wh=0.000",
+        "soil_mean=62.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T00:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.2055,
+        "pred_wh": 0.0,
+        "reward": 2.2055
+      },
+      "why": [
+        "delta_t=0.97C near_dp=False predawn=False passive=True",
+        "cond_potential=8.82 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.21 pred_ml=2.21 pred_wh=0.000",
+        "soil_mean=63.8% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T00:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.069500000000001,
+        "pred_wh": 0.0,
+        "reward": 2.069500000000001
+      },
+      "why": [
+        "delta_t=1.14C near_dp=False predawn=False passive=True",
+        "cond_potential=8.28 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.07 pred_ml=2.07 pred_wh=0.000",
+        "soil_mean=62.6% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T00:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.0840000000000005,
+        "pred_wh": 0.0,
+        "reward": 2.0840000000000005
+      },
+      "why": [
+        "delta_t=1.12C near_dp=False predawn=False passive=True",
+        "cond_potential=8.34 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.08 pred_ml=2.08 pred_wh=0.000",
+        "soil_mean=59.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T00:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.2085,
+        "pred_wh": 0.0,
+        "reward": 2.2085
+      },
+      "why": [
+        "delta_t=0.97C near_dp=False predawn=False passive=True",
+        "cond_potential=8.83 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.21 pred_ml=2.21 pred_wh=0.000",
+        "soil_mean=62.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T00:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1585,
+        "pred_wh": 0.0,
+        "reward": 2.1585
+      },
+      "why": [
+        "delta_t=1.03C near_dp=False predawn=False passive=True",
+        "cond_potential=8.63 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.16 pred_ml=2.16 pred_wh=0.000",
+        "soil_mean=61.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T01:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1485000000000007,
+        "pred_wh": 0.0,
+        "reward": 2.1485000000000007
+      },
+      "why": [
+        "delta_t=1.04C near_dp=False predawn=False passive=True",
+        "cond_potential=8.59 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.15 pred_ml=2.15 pred_wh=0.000",
+        "soil_mean=60.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T01:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.057,
+        "pred_wh": 0.0,
+        "reward": 2.057
+      },
+      "why": [
+        "delta_t=1.15C near_dp=False predawn=False passive=True",
+        "cond_potential=8.23 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.06 pred_ml=2.06 pred_wh=0.000",
+        "soil_mean=61.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T01:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.2289999999999996,
+        "pred_wh": 0.0,
+        "reward": 2.2289999999999996
+      },
+      "why": [
+        "delta_t=0.94C near_dp=False predawn=False passive=True",
+        "cond_potential=8.92 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.23 pred_ml=2.23 pred_wh=0.000",
+        "soil_mean=63.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T01:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1155,
+        "pred_wh": 0.0,
+        "reward": 2.1155
+      },
+      "why": [
+        "delta_t=1.08C near_dp=False predawn=False passive=True",
+        "cond_potential=8.46 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.12 pred_ml=2.12 pred_wh=0.000",
+        "soil_mean=62.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T01:40:00",
+      "night_id": "night-20261101",
+      "action_id": "201",
+      "faults": [],
+      "decision": {
+        "action": "nucleation_full",
+        "action_id": 201,
+        "pred_ml": 15.628,
+        "pred_wh": 0.66,
+        "reward": 12.328
+      },
+      "why": [
+        "delta_t=0.72C near_dp=True predawn=False passive=True",
+        "cond_potential=9.63 cloud_factor=0.50 wind_pen=1.00",
+        "best=nucleation_full reward=12.33 pred_ml=15.63 pred_wh=0.660",
+        "soil_mean=63.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T01:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.2385,
+        "pred_wh": 0.0,
+        "reward": 2.2385
+      },
+      "why": [
+        "delta_t=0.93C near_dp=False predawn=False passive=True",
+        "cond_potential=8.95 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.24 pred_ml=2.24 pred_wh=0.000",
+        "soil_mean=62.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T02:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [
+        {
+          "code": "POWER_LOW_BUS",
+          "severity": "warn",
+          "message": "bus voltage low",
+          "response": "disable_high_load_actuators",
+          "value": 10.5
+        }
+      ],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.9960000000000007,
+        "pred_wh": 0.0,
+        "reward": 1.9960000000000007
+      },
+      "why": [
+        "delta_t=1.23C near_dp=False predawn=False passive=True",
+        "cond_potential=7.98 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.00 pred_ml=2.00 pred_wh=0.000",
+        "soil_mean=61.4% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T02:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.085,
+        "pred_wh": 0.0,
+        "reward": 2.085
+      },
+      "why": [
+        "delta_t=1.12C near_dp=False predawn=False passive=True",
+        "cond_potential=8.34 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.08 pred_ml=2.08 pred_wh=0.000",
+        "soil_mean=61.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T02:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.1515,
+        "pred_wh": 0.0,
+        "reward": 2.1515
+      },
+      "why": [
+        "delta_t=1.04C near_dp=False predawn=False passive=True",
+        "cond_potential=8.61 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.15 pred_ml=2.15 pred_wh=0.000",
+        "soil_mean=59.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T02:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.9019999999999997,
+        "pred_wh": 0.0,
+        "reward": 1.9019999999999997
+      },
+      "why": [
+        "delta_t=1.35C near_dp=False predawn=False passive=True",
+        "cond_potential=7.61 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.90 pred_ml=1.90 pred_wh=0.000",
+        "soil_mean=62.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T02:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.918,
+        "pred_wh": 0.0,
+        "reward": 1.918
+      },
+      "why": [
+        "delta_t=1.33C near_dp=False predawn=False passive=True",
+        "cond_potential=7.67 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.92 pred_ml=1.92 pred_wh=0.000",
+        "soil_mean=61.8% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T02:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.9795000000000003,
+        "pred_wh": 0.0,
+        "reward": 1.9795000000000003
+      },
+      "why": [
+        "delta_t=1.25C near_dp=False predawn=False passive=True",
+        "cond_potential=7.92 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.98 pred_ml=1.98 pred_wh=0.000",
+        "soil_mean=61.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T03:00:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8840000000000003,
+        "pred_wh": 0.0,
+        "reward": 1.8840000000000003
+      },
+      "why": [
+        "delta_t=1.37C near_dp=False predawn=False passive=True",
+        "cond_potential=7.54 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.88 pred_ml=1.88 pred_wh=0.000",
+        "soil_mean=60.4% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T03:10:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 2.0285,
+        "pred_wh": 0.0,
+        "reward": 2.0285
+      },
+      "why": [
+        "delta_t=1.19C near_dp=False predawn=False passive=True",
+        "cond_potential=8.11 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=2.03 pred_ml=2.03 pred_wh=0.000",
+        "soil_mean=60.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T03:20:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8940000000000006,
+        "pred_wh": 0.0,
+        "reward": 1.8940000000000006
+      },
+      "why": [
+        "delta_t=1.36C near_dp=False predawn=False passive=True",
+        "cond_potential=7.58 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.89 pred_ml=1.89 pred_wh=0.000",
+        "soil_mean=60.7% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T03:30:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.8655,
+        "pred_wh": 0.0,
+        "reward": 1.8655
+      },
+      "why": [
+        "delta_t=1.40C near_dp=False predawn=False passive=True",
+        "cond_potential=7.46 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.87 pred_ml=1.87 pred_wh=0.000",
+        "soil_mean=62.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T03:40:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.9105,
+        "pred_wh": 0.0,
+        "reward": 1.9105
+      },
+      "why": [
+        "delta_t=1.34C near_dp=False predawn=False passive=True",
+        "cond_potential=7.64 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.91 pred_ml=1.91 pred_wh=0.000",
+        "soil_mean=62.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T03:50:00",
+      "night_id": "night-20261101",
+      "action_id": "100",
+      "faults": [],
+      "decision": {
+        "action": "passive_only",
+        "action_id": 100,
+        "pred_ml": 1.7355,
+        "pred_wh": 0.0,
+        "reward": 1.7355
+      },
+      "why": [
+        "delta_t=1.56C near_dp=False predawn=False passive=True",
+        "cond_potential=6.94 cloud_factor=0.50 wind_pen=1.00",
+        "best=passive_only reward=1.74 pred_ml=1.74 pred_wh=0.000",
+        "soil_mean=63.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T04:00:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 9.890800000000002,
+        "pred_wh": 0.42,
+        "reward": 7.790800000000003
+      },
+      "why": [
+        "delta_t=1.39C near_dp=False predawn=True passive=True",
+        "cond_potential=7.49 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=7.79 pred_ml=9.89 pred_wh=0.420",
+        "soil_mean=61.6% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T04:10:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [
+        {
+          "code": "SENSOR_SOIL_DIVERGENCE",
+          "severity": "warn",
+          "message": "soil probes diverge",
+          "response": "inspect_soil_probes",
+          "value": {
+            "a": 90.0,
+            "b": 20.0
+          }
+        }
+      ],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 10.096879999999999,
+        "pred_wh": 0.42,
+        "reward": 7.996879999999999
+      },
+      "why": [
+        "delta_t=1.32C near_dp=False predawn=True passive=True",
+        "cond_potential=7.71 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=8.00 pred_ml=10.10 pred_wh=0.420",
+        "soil_mean=55.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T04:20:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 9.13456,
+        "pred_wh": 0.42,
+        "reward": 7.034560000000001
+      },
+      "why": [
+        "delta_t=1.65C near_dp=False predawn=True passive=True",
+        "cond_potential=6.67 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=7.03 pred_ml=9.13 pred_wh=0.420",
+        "soil_mean=61.9% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T04:30:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 9.27992,
+        "pred_wh": 0.42,
+        "reward": 7.179920000000001
+      },
+      "why": [
+        "delta_t=1.60C near_dp=False predawn=True passive=True",
+        "cond_potential=6.83 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=7.18 pred_ml=9.28 pred_wh=0.420",
+        "soil_mean=61.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T04:40:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.547600000000003,
+        "pred_wh": 0.42,
+        "reward": 6.447600000000003
+      },
+      "why": [
+        "delta_t=1.85C near_dp=False predawn=True passive=True",
+        "cond_potential=6.03 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.45 pred_ml=8.55 pred_wh=0.420",
+        "soil_mean=62.8% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T04:50:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [
+        {
+          "code": "RANGE_RH_PCT",
+          "severity": "critical",
+          "message": "rh_pct out of range",
+          "response": "flag_sensor_invalid",
+          "value": 150.0
+        },
+        {
+          "code": "PHYSICS_RH_INVALID",
+          "severity": "critical",
+          "message": "RH invalid",
+          "response": "flag_sensor_invalid",
+          "value": 150.0
+        }
+      ],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 16.8,
+        "pred_wh": 0.42,
+        "reward": 14.700000000000001
+      },
+      "why": [
+        "delta_t=1.69C near_dp=False predawn=True passive=True",
+        "cond_potential=15.00 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=14.70 pred_ml=16.80 pred_wh=0.420",
+        "soil_mean=61.8% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T05:00:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [
+        {
+          "code": "SAFETY_PELTIER_NO_FAN",
+          "severity": "critical",
+          "message": "Peltier on without fan",
+          "response": "force_fan_on_disable_peltier",
+          "value": {
+            "peltier": 1.0,
+            "fan": 0.0
+          }
+        }
+      ],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.65064,
+        "pred_wh": 0.42,
+        "reward": 6.55064
+      },
+      "why": [
+        "delta_t=1.82C near_dp=False predawn=True passive=True",
+        "cond_potential=6.14 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.55 pred_ml=8.65 pred_wh=0.420",
+        "soil_mean=62.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T05:10:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.8236,
+        "pred_wh": 0.42,
+        "reward": 6.723600000000001
+      },
+      "why": [
+        "delta_t=1.76C near_dp=False predawn=True passive=True",
+        "cond_potential=6.33 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.72 pred_ml=8.82 pred_wh=0.420",
+        "soil_mean=63.0% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T05:20:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.3544,
+        "pred_wh": 0.42,
+        "reward": 6.2544
+      },
+      "why": [
+        "delta_t=1.92C near_dp=False predawn=True passive=True",
+        "cond_potential=5.82 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.25 pred_ml=8.35 pred_wh=0.420",
+        "soil_mean=62.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T05:30:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 7.636800000000002,
+        "pred_wh": 0.42,
+        "reward": 5.536800000000001
+      },
+      "why": [
+        "delta_t=2.17C near_dp=False predawn=True passive=True",
+        "cond_potential=5.04 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=5.54 pred_ml=7.64 pred_wh=0.420",
+        "soil_mean=61.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T05:40:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.540239999999997,
+        "pred_wh": 0.42,
+        "reward": 6.4402399999999975
+      },
+      "why": [
+        "delta_t=1.86C near_dp=False predawn=True passive=True",
+        "cond_potential=6.02 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.44 pred_ml=8.54 pred_wh=0.420",
+        "soil_mean=62.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T05:50:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.047120000000003,
+        "pred_wh": 0.42,
+        "reward": 5.9471200000000035
+      },
+      "why": [
+        "delta_t=2.03C near_dp=False predawn=True passive=True",
+        "cond_potential=5.49 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=5.95 pred_ml=8.05 pred_wh=0.420",
+        "soil_mean=61.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T06:00:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.543920000000004,
+        "pred_wh": 0.42,
+        "reward": 6.443920000000004
+      },
+      "why": [
+        "delta_t=1.86C near_dp=False predawn=True passive=False",
+        "cond_potential=6.03 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.44 pred_ml=8.54 pred_wh=0.420",
+        "soil_mean=62.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T06:10:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.115200000000002,
+        "pred_wh": 0.42,
+        "reward": 6.015200000000002
+      },
+      "why": [
+        "delta_t=2.01C near_dp=False predawn=True passive=False",
+        "cond_potential=5.56 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.02 pred_ml=8.12 pred_wh=0.420",
+        "soil_mean=62.5% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T06:20:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 8.19984,
+        "pred_wh": 0.42,
+        "reward": 6.09984
+      },
+      "why": [
+        "delta_t=1.98C near_dp=False predawn=True passive=False",
+        "cond_potential=5.65 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=6.10 pred_ml=8.20 pred_wh=0.420",
+        "soil_mean=60.3% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T06:30:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 7.533759999999997,
+        "pred_wh": 0.42,
+        "reward": 5.433759999999998
+      },
+      "why": [
+        "delta_t=2.21C near_dp=False predawn=True passive=False",
+        "cond_potential=4.93 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=5.43 pred_ml=7.53 pred_wh=0.420",
+        "soil_mean=61.1% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T06:40:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 7.3902399999999995,
+        "pred_wh": 0.42,
+        "reward": 5.290239999999999
+      },
+      "why": [
+        "delta_t=2.26C near_dp=False predawn=True passive=False",
+        "cond_potential=4.77 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=5.29 pred_ml=7.39 pred_wh=0.420",
+        "soil_mean=60.4% irrigation=none"
+      ]
+    },
+    {
+      "iso_time": "2026-11-02T06:50:00",
+      "night_id": "night-20261101",
+      "action_id": "310",
+      "faults": [
+        {
+          "code": "RANGE_AIR_TEMP_C",
+          "severity": "critical",
+          "message": "air_temp_c out of range",
+          "response": "flag_sensor_invalid",
+          "value": 999.0
+        }
+      ],
+      "decision": {
+        "action": "shed_dual_nuc",
+        "action_id": 310,
+        "pred_ml": 6.794080000000001,
+        "pred_wh": 0.42,
+        "reward": 4.694080000000001
+      },
+      "why": [
+        "delta_t=984.91C near_dp=False predawn=True passive=False",
+        "cond_potential=4.12 cloud_factor=0.50 wind_pen=1.00",
+        "best=shed_dual_nuc reward=4.69 pred_ml=6.79 pred_wh=0.420",
+        "soil_mean=63.0% irrigation=none"
+      ]
+    }
+  ]
+}

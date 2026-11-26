@@ -1,0 +1,37 @@
+{
+  "n_rows": 30000,
+  "n_nights": 1835,
+  "splits": 3,
+  "lambda_wh": 5.0,
+  "baseline_action": "passive_only",
+  "mean_improvement_pct": 98.55923860767992,
+  "mean_policy_reward": 2.628657690857819,
+  "mean_baseline_reward": 1.3459082885516658,
+  "target_met_15pct": true,
+  "folds": [
+    {
+      "fold": 1,
+      "ml_mae": 1.1606645669014215,
+      "wh_mae": 0.0026743717431358597,
+      "policy_reward": 2.840138551669055,
+      "baseline_reward": 1.3038177032909442,
+      "improvement_pct": 117.83248864637936
+    },
+    {
+      "fold": 2,
+      "ml_mae": 1.2570160500352214,
+      "wh_mae": 0.0025841005426334353,
+      "policy_reward": 2.275381237426539,
+      "baseline_reward": 1.5191377239139143,
+      "improvement_pct": 49.78110286580364
+    },
+    {
+      "fold": 3,
+      "ml_mae": 1.0891949072323237,
+      "wh_mae": 0.0024292671573459177,
+      "policy_reward": 2.7704532834778623,
+      "baseline_reward": 1.2147694384501388,
+      "improvement_pct": 128.06412431085676
+    }
+  ]
+}

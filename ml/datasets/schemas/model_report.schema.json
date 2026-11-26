@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DewLeafModelReport",
+  "type": "object",
+  "required": ["n_rows","n_nights","splits","lambda_wh","baseline_action","mean_improvement_pct","target_met_15pct","folds"],
+  "properties": {
+    "n_rows": {"type": "integer"},
+    "n_nights": {"type": "integer"},
+    "splits": {"type": "integer"},
+    "lambda_wh": {"type": "number"},
+    "baseline_action": {"type": "string"},
+    "mean_improvement_pct": {"type": "number"},
+    "target_met_15pct": {"type": "boolean"},
+    "folds": {"type": "array"}
+  },
+  "additionalProperties": true
+}

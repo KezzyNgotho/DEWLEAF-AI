@@ -1,0 +1,33 @@
+{
+  "format": "sklearn-joblib",
+  "note": "Convert to TFLite/TFLM for ESP32 deployment. Joblib is for cloud/offline evaluation.",
+  "features": [
+    "air_temp_c",
+    "rh_pct",
+    "pressure_hpa",
+    "dew_point_c",
+    "spine_temp_c",
+    "soil_a_pct",
+    "soil_b_pct",
+    "bus_v",
+    "delta_t",
+    "hour_sin",
+    "hour_cos",
+    "is_predawn",
+    "wind_speed_kmh",
+    "cloud_cover_pct",
+    "vpd_kpa",
+    "et0_mm",
+    "rh_x_cloud",
+    "delta_t_x_wind",
+    "soil_mean",
+    "dew_margin"
+  ],
+  "cat_features": [
+    "action_name"
+  ],
+  "targets": [
+    "harvested_ml",
+    "wh_window"
+  ]
+}

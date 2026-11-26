@@ -1,0 +1,14 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: python -m pip install -r logger/requirements.txt -r ml/requirements.txt pytest
+      - run: python -m py_compile logger/dewleaf_logger.py ml/*.py
+      - run: python scripts/checks/check_data_contract.py
+      - run: PYTHONPATH=. python scripts/checks/check_golden.py
+      - run: PYTHONPATH=. pytest -q tests/unit tests/data
