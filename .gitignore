@@ -27,3 +27,5 @@ ml/data/open_meteo/
 ml/data/global_open_meteo/
 ml/data/external/
 ml/artifacts/*.joblib
+
+ml/artifacts/tflite/*.joblib

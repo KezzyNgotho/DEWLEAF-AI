@@ -21,11 +21,12 @@ make build-fw  # PlatformIO ESP32-S3 build (needs platformio)
 | ESP32-S3 firmware build | PASS | `make build-fw`, 394KB bin / 7.7% RAM |
 | Telemetry contract | PASS | `ml/datasets/schemas/telemetry.schema.json`, `scripts/checks/check_data_contract.py` |
 | Golden regression baseline | PASS | `tests/golden/hil_replay_summary.json`, `scripts/checks/check_golden.py` |
-| Unit/data/safety tests | PASS | `PYTHONPATH=. pytest -q tests/unit tests/data` |
+| Unit/data/safety tests | PASS | `PYTHONPATH=. pytest -q tests/unit tests/data` (16 passed) |
 | Software twin / HIL sim | PASS | `ml/hil_simulator.py` emits same CSV schema as firmware |
 | Replay + fault monitor | PASS | `ml/replay.py`, `ml/runtime_monitor.py`, `ml/fault_injector.py` |
-| Explainable decision engine | PASS | `ml/intelligence_engine.py` with `why` traces + safety overrides |
-| Cloud API scaffold | PASS | `software/cloud/api.py` (`/health`, `/api/telemetry`, `/api/decide`) |
+| Explainable decision engine | PASS | `ml/intelligence_engine.py` with confidence, risks, safe fallback |
+| Cloud API + dashboard | PASS | `software/cloud/api.py`, `software/cloud/dashboard.py` |
+| TFLite/golden-vector export | PASS | `ml/export_tflite.py`, `ml/artifacts/tflite/golden_vectors.json` |
 
 ## What Needs Hardware (Not Yet Provable)
 
@@ -59,7 +60,7 @@ scripts/checks/          Data contract + golden regression checks
 make test
 PYTHONPATH=. python3 scripts/checks/check_golden.py
 
-# Digital twin
+# Digital twin + replay
 PYTHONPATH=. python3 ml/hil_simulator.py --nights 1 --step-s 600 --seed 7 > logs/hil.csv
 PYTHONPATH=. python3 ml/replay.py --data logs/hil.csv --out ml/artifacts/hil_replay.json
 
@@ -67,10 +68,15 @@ PYTHONPATH=. python3 ml/replay.py --data logs/hil.csv --out ml/artifacts/hil_rep
 PYTHONPATH=. python3 ml/fault_injector.py --in logs/hil.csv --out logs/hil_faulty.csv --rate 0.1
 PYTHONPATH=. python3 ml/replay.py --data logs/hil_faulty.csv --out ml/artifacts/hil_faulty_replay.json
 
+# Dashboard / edge export
+PYTHONPATH=. python3 software/cloud/dashboard.py
+PYTHONPATH=. python3 ml/export_tflite.py --data logs/sim_bench_14night.csv --out-dir ml/artifacts/tflite
+
 # Logger (when hardware connected)
 python logger/dewleaf_logger.py --port /dev/ttyACM0 --out logs/dewleaf.csv --decision-out logs/decisions.jsonl
 
-# Real D0.3 retrain (after 14-night bench capture)
+# Real D0.3 calibrate + retrain (after 14-night bench capture)
+python ml/calibrate_from_bench.py --data logs/dewleaf.csv --out-header models/dewleaf_policy_calibrated.h --out-report ml/artifacts/calibration_report.json
 python ml/train_dewleaf_policy.py --data logs/dewleaf.csv --out models/dewleaf_policy.h --report-out ml/artifacts/real_validation_report.json
 ```
 

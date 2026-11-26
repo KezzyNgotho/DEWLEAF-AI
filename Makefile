@@ -34,3 +34,9 @@ clean:
 
 golden:
 	PYTHONPATH=. $(PY) scripts/checks/check_golden.py
+
+dashboard:
+	PYTHONPATH=. $(PY) software/cloud/dashboard.py
+
+export-tflite:
+	PYTHONPATH=. $(PY) ml/export_tflite.py --data logs/sim_bench_14night.csv --out-dir ml/artifacts/tflite

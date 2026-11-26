@@ -1,0 +1,34 @@
+{
+  "data": "logs/sim_bench_14night.csv",
+  "rows": 1092,
+  "nights": 14,
+  "lambda_wh": 5.0,
+  "label_source": "measured_bench_calibration",
+  "actions": [
+    {
+      "action_name": "nucleation_assist",
+      "mean": -1.5466071428571428,
+      "count": 112
+    },
+    {
+      "action_name": "passive_only",
+      "mean": 0.1091625,
+      "count": 800
+    },
+    {
+      "action_name": "shed_aggressive",
+      "mean": 120.05041666666666,
+      "count": 24
+    },
+    {
+      "action_name": "shed_dual",
+      "mean": 28.277716535433072,
+      "count": 127
+    },
+    {
+      "action_name": "shed_single_explore",
+      "mean": 77.43241379310345,
+      "count": 29
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+-r logger/requirements.txt
+-r ml/requirements.txt
