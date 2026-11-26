@@ -92,6 +92,3 @@ PYTHONPATH=. python3 ml/replay.py --data /tmp/golden_hil.csv --out /tmp/golden_r
 # regenerate tests/golden/hil_replay_summary.json, review diff, commit with reason
 ```
 
-## Funding / Next Step
-
-Phase 0 needs physical bench build funds. See `docs/ops/FUNDRAISING_ONE_PAGER.md`, `docs/ops/PILOT_PROPOSAL.md`, `hardware/bom/phase0_budget_template.csv`. Kill/proceed criterion: measured D0.3 >=15% mL/Wh improvement.
