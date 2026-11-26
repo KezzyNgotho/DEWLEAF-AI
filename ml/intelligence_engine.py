@@ -72,24 +72,63 @@ def estimate_reward(c: Context, action: dict, f: dict, lam=5.0) -> dict:
     if not f['passive'] and not f['predawn']: ml*=0.1
     return {'action':a['name'],'action_id':a['id'],'pred_ml':ml,'pred_wh':wh,'reward':ml-lam*wh}
 
-def decide(c: Context, lam=5.0) -> dict:
+def assess_confidence(c: Context, f: dict, faults: list[dict] | None = None) -> dict:
+    faults = faults or []
+    score = 1.0
+    reasons = []
+    if c.wind_kmh == 0.0 and c.cloud_pct == 50.0:
+        score -= 0.15; reasons.append("missing_or_default_weather_inputs")
+    if c.spine_c is None or math.isnan(c.spine_c):
+        score -= 0.2; reasons.append("missing_spine_temp")
+    critical = [x for x in faults if x.get("severity") == "critical"]
+    warns = [x for x in faults if x.get("severity") == "warn"]
+    score -= min(0.6, 0.35 * len(critical))
+    score -= min(0.2, 0.05 * len(warns))
+    if critical: reasons.append("critical_faults_present")
+    if c.bus_v < 11.5:
+        score -= 0.1; reasons.append("low_bus_voltage")
+    score = clamp(score, 0.0, 1.0)
+    label = "high" if score >= 0.8 else "medium" if score >= 0.55 else "low"
+    return {"score": round(score,3), "label": label, "reasons": reasons, "fault_count": len(faults)}
+
+def decide(c: Context, lam=5.0, faults: list[dict] | None = None, model_source: str = "physics_heuristic_synthetic") -> dict:
     f=physics_features(c)
     scored=[estimate_reward(c,a,f,lam) for a in ACTIONS]
+    for s in scored:
+        # Penalize risky actions when confidence is low
+        pass
     scored.sort(key=lambda x:x['reward'], reverse=True)
     best=scored[0]
+    conf = assess_confidence(c, f, faults)
+    if conf['label'] in ('low','medium') and best['action_id'] in (201,302,310):
+        # degrade to safer action
+        for s in scored:
+            if s['action_id'] in (100,200,301,300):
+                best = s; break
     soil=f['soil_mean']
     irrigation='none'
     if not f['passive'] and not f['predawn']:
         if soil < SAFETY['soil_target_min']: irrigation='micro_dose'
         elif soil > SAFETY['soil_target_max']: irrigation='hold'
+    risks=[]
+    if model_source != "measured_calibrated":
+        risks.append("model_not_calibrated_on_real_bench_telemetry")
+    if f['cond_potential'] < 2: risks.append("low_condensation_potential")
+    if c.bus_v < SAFETY['min_bus_v']: risks.append("low_bus_voltage")
+    if c.spine_c <= SAFETY['frost_guard_c'] + 0.5: risks.append("near_frost_guard")
     explanation={
         'inputs':asdict(c),'features':f,'selected':best,'top3':scored[:3],
         'irrigation':irrigation,
+        'confidence':conf,
+        'model_source':model_source,
+        'assumptions':['physics_informed_reward','no_measured_yield_feedback_loop','single_node_local_sensors'],
+        'risks':risks,
+        'safe_fallback':{'action_id':100,'name':'passive_only','reason':'default_safe_state'},
         'why':[
             f"delta_t={f['delta_t']:.2f}C near_dp={f['near_dp']} predawn={f['predawn']} passive={f['passive']}",
             f"cond_potential={f['cond_potential']:.2f} cloud_factor={f['cloud_factor']:.2f} wind_pen={f['wind_pen']:.2f}",
             f"best={best['action']} reward={best['reward']:.2f} pred_ml={best['pred_ml']:.2f} pred_wh={best['pred_wh']:.3f}",
-            f"soil_mean={soil:.1f}% irrigation={irrigation}",
+            f"soil_mean={soil:.1f}% irrigation={irrigation} confidence={conf['label']}",
         ],
     }
     return explanation
